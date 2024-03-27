@@ -18,9 +18,7 @@
     --white: #ffffff;
     --green-hover: #9fe8df;
     --danger: #e17457;
-    
 }
-
 body {
     background-color: var(--green-200);
 }
@@ -34,11 +32,11 @@ header {
 main {
     background-color: var(--white);
     padding: 2rem;
-    border-radius: 1.5625rem 1.5625rem 0 0;
+    border-radius: 1.5625rem 1.5625rem 0 0 ;
 }
 
 .gorjeta,
-.pessoas{
+.pessoas {
     margin-bottom: 2rem;
 }
 
@@ -49,7 +47,7 @@ main {
 }
 
 .conta div,
-.pessoas .input-box{
+.pessoas .input-box {
     margin-top: 0.4rem;
     background-color: var(--green-100);
     padding: 0.4rem 1.2rem;
@@ -77,6 +75,7 @@ main {
     color: var(--green-300);
 }
 
+.conta:has(input:focus) div,
 .conta:has(input:hover) div,
 .pessoas:has(input:focus) .input-box,
 .pessoas:has(input:hover) .input-box,
@@ -106,7 +105,6 @@ main {
     color: var(--white);
 }
 
-
 .gorjeta .botao-ativo{
     background-color: var(--light-green);
     color: var(--green-800);
@@ -127,7 +125,8 @@ main {
 .gorjeta #outra::placeholder {
     color: var(--green-300);
 }
-pessoas .textos {
+
+.pessoas .textos {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -199,6 +198,7 @@ pessoas .textos {
 }
 
 @media(min-width: 920px) {
+
     body {
         display: flex;
         flex-direction: column;
@@ -223,6 +223,7 @@ pessoas .textos {
     main section {
         width: 100%;
     }
+
 
     .gorjeta div {
         grid-template-columns: 1fr 1fr 1fr;
